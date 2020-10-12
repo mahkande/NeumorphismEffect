@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e1e6ec;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 10px;
+}
+
+ul li label {
+  position: relative;
+  cursor: pointer;
+}
+
+ul li label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+ul li label :checked ~ .social {
+  box-shadow: inset -2px -2px 5px #fff, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li label :checked ~ .social i {
+  transform: scale(0.95);
+}
+
+ul li label .social {
+  width: 80px;
+  height: 80px;
+  background: #e1e6ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px -2px 5px #fff, 3px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+ul li label .social i {
+  font-size: 40px;
+}
